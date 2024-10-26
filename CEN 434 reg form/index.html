@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <h1>KILEKUN'S <span class="vocalists">VOCALISTS</span>🎤🎵</h1>
+    <p>Please fill out this form with the required information</p>
+    <form method="post">
+      <fieldset>
+        <label for="first-name"><span>Enter Your First Name:</span><input id="first-name" type="text" required name="first name" placeholder="First name..."/></label>
+        <label for="last-name"><span>Enter Your Last Name:</span><input id="last-name" type="text" required name="last name" placeholder="Last Name..."/></label>
+        <label for="email"><span>Enter your email:</span><input id="email" type="email" required name="email" placeholder="example@email.com..."/></label>
+        <label for="age"><span>How old are you?</span><input type="number" id="age" required name="age" placeholder="Age..."></label>
+        <label for="voice-part"> <span>What vocal part are you specialized in?</span>
+          <select id="voice-part" name="voice-part">
+              <option value="">(Select one)</option>
+              <option value="1">Soprano</option>
+              <option value="2">Alto</option>
+              <option value="3">Tenor</option>
+              <option value="4">Bass</option>
+          </select>
+      </label>
+        <label for="years"><span>How many years have you been a vocalist?</span><input type="number" id="years" required name="years" placeholder=""></label>
+      </fieldset>
+      <fieldset>
+        <legend><span>Gender (required)</span></legend>
+        <label for="male"><input id="male" type="radio" name="gender" class="inline" checked/> 
+            Male
+        </label>
+        <label for="female"><input id="female" type="radio" name="gender" class="inline"/> 
+            Female
+        </label>
+        <label for="rather-not-say"><input id="rather-not-say" type="radio" name="gender" class="inline"/> 
+            I'd rather not say
+        </label>
+      </fieldset>
+      <fieldset>
+        <h3>UPLOAD A PROFILE PICTURE OF YOURSELF</h3>
+        <div class="file-upload-container">
+          <label for="profile-picture" class="custom-file-upload">Upload a Profile Picture</label>
+          <input id="profile-picture" type="file" name="profile picture">
+      </div>
+      </fieldset>
+      <fieldset>
+        <label for="referrer"> <p class="source">How did you hear about us?</p>
+            <select id="referrer" name="referrer">
+                <option value="">(Select one)</option>
+                <option value="1">News</option>
+                <option value="2">YouTube Channel</option>
+                <option value="3">Friends/Family/Colleague</option>
+                <option value="4">Other</option>
+            </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <p class="bio">Provide a bio:</p>
+        <label for="bio"><textarea rows ="3" cols="30" placeholder="I like singing in the bathroom..." id="bio" name="bio"></textarea></label>
+        <input type="submit" value="Submit" name="submit" id="submit"/>
+      </fieldset>
+    </form>
+    <footer>Developed and Designed by <a href="https://www.linkedin.com/in/adekilekun-onajide-429b84297/?originalSubdomain=ng"><span>Adekilekun Onajide</span></a></footer>
+  </body>
+</html>
