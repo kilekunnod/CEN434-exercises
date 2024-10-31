@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #1b1b32;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+h3, .bio {
+    margin-top: -30px;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+}
+
+#submit {
+    margin-top: 30px;
+}
+
+.vocalists {
+    color: lightskyblue;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 300px;
+    width: 60vw;
+    padding: 2em;
+}
+
+h1 {
+    letter-spacing: 0.4rem;
+    transition: all 0.5s ease-in-out;
+    transform: scale(1);
+    padding: 5px;
+}
+
+h1:hover {
+    background-color: #3b3b4f;
+    transform: scale(1.1);
+}
+
+p {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1);
+    padding: 8px;
+}
+
+p:hover {
+    background-color: #3b3b4f;
+    transform: scale(1.1);
+    border-radius: 4px;
+}
+
+fieldset {
+    padding: 2rem 0;
+    border: none;
+    border-bottom: 3px solid #3b3b4f; /* for separation */ 
+    margin-bottom: 30px; 
+}
+
+fieldset:last-of-type {
+    border-bottom: none;
+}
+
+.source {
+    margin-top: -30px;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+input,
+textarea,
+select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+
+input, textarea {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: white;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    min-width: 60px;
+    border-radius: 5px;
+}
+
+input[placeholder="First name..."],
+input[placeholder="Last Name..."],
+input[placeholder="example@email.com..."],
+input[placeholder="Age..."],
+input[placeholder="Soprano, Alto, Tenor, Bass"] {
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+}
+
+input[type="submit"]:hover {
+    background-color: #0a0a23;
+    transition: all ease-in-out 0.5s;
+}
+
+.file-upload-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+    margin: 20px auto; 
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    padding: 10px 20px;
+    background-color: #457B9D;
+    color: white;
+    border: 1px solid #1D3557;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.custom-file-upload:hover {
+    background-color: #1D3557; 
+    transform: scale(1.05); 
+}
+
+h3 {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1);
+    padding: 5px;
+    text-align: center;
+}
+
+h3:hover {
+    background-color: #3b3b4f;
+    transform: scale(1.1);
+    border-radius: 5px;
+}
+
+span {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1);
+    padding: 8px;
+}
+
+span:hover {
+    background-color: #3b3b4f;
+    transform: scale(0.8);
+    border-radius: 3px;
+}
+
+#voice-part > option,
+#referrer > option {
+    background-color: #0a0a23;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+#voice-part,
+#referrer {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0a0a23;
+    color: #ffffff;
+    border-radius: 3px;
+}
+
+a {
+    color: #dfdfe2;
+}
+
+textarea[placeholder="I like singing in the bathroom..."] {
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+}
+
+input:focus, textarea:focus {
+    border-color: #457B9D;
+    outline: none; 
+}
+
+footer {
+    background-color: #1D3557;
+    color: #F1FAEE;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+footer a {
+    color: #A8DADC;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+footer a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #A8DADC;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+footer a:hover::after {
+    transform: scaleX(1);
+}
+
+/* responsive design */
+@media (max-width: 768px) {
+    form {
+        width: 80vw; 
+        padding: 1.5em; 
+    }
+    
+    input[type="submit"] {
+        width: 100%; 
+        height: 2.5em; 
+        font-size: 1rem; 
+    }
+
+    h1 {
+        font-size: 1.5rem; 
+    }
+
+    p, h3 {
+        font-size: 0.9rem; 
+    }
+
+    .file-upload-container {
+        flex-direction: column; 
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.3rem; 
+    }
+
+    p, h3 {
+        font-size: 0.8rem;
+    }
+
+    input, textarea {   
+        font-size: 0.9rem;
+    }
+
+    input[type="submit"] {
+        height: 3em; 
+    }
+}
