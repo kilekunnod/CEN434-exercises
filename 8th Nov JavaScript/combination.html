@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combination Calculator</title>
+</head>
+<body>
+    <style>
+        body {
+            background-color: bisque;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: center;
+        }
+
+        button {
+            border-radius: 4px;
+            color: black;
+            padding: 6px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        button:hover {
+            background-color: burlywood;
+        }
+
+        span {
+            font-size: small;
+        }
+    </style>
+    <h2>Calculate Combination: <span>5</span>C<span>4</span></h2>
+    <button onclick="calculateCombination()">Calculate <span>5</span>C<span>4</span></button>
+    <p id="result"></p>
+
+    <script>
+        function factorial(n) {
+            if (n === 0 || n === 1) return 1;
+            let result = 1;
+            for (let i = 2; i <= n; i++) {
+                result *= i;
+            }
+            return result;
+        }
+
+        function calculateCombination() {
+            const n = 5;
+            const r = 4;
+            const combination = factorial(n) / (factorial(r) * factorial(n - r));
+            document.getElementById("result").innerText = `5 Choose 4 is: ${combination}`;
+        }
+    </script>
+</body>
+</html>
